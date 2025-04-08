@@ -16,3 +16,18 @@ https://github.com/jay020420/Upload_Solution
 개인에게 api 엑세스를 내어주지 않는 오픈마켓의 문제가 있어 현재 완벽하게 동작하지는 않습니다만
 Prop과 State의 관계를 이해하기 위해 좋은 예시라고 생각되어
 가장 prop과 state를 많이 사용한 대표적인 파일 1개를 업로드하였습니다.
+
+ProductForms.js
+
+``// props 사용: product, isEdit, history
+const ProductForm = ({ product, isEdit = false, history }) => {
+  // state 사용
+  const [fileList, setFileList] = useState([]);
+  const [description, setDescription] = useState('');
+  const [hasVariants, setHasVariants] = useState(false);
+  const [options, setOptions] = useState([{ name: '', values: [{ name: '', additionalPrice: 0 }] }]);
+  const [variants, setVariants] = useState([]);
+  const [previewImage, setPreviewImage] = useState(null);
+  const [previewVisible, setPreviewVisible] = useState(false);
+  // 중략
+}``
