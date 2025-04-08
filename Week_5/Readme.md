@@ -19,7 +19,7 @@ Prop과 State의 관계를 이해하기 위해 좋은 예시라고 생각되어
 
 ProductForms.js
 
-``// props 사용: product, isEdit, history
+```// props 사용: product, isEdit, history
 const ProductForm = ({ product, isEdit = false, history }) => {
   // state 사용
   const [fileList, setFileList] = useState([]);
@@ -30,4 +30,4 @@ const ProductForm = ({ product, isEdit = false, history }) => {
   const [previewImage, setPreviewImage] = useState(null);
   const [previewVisible, setPreviewVisible] = useState(false);
   // 중략
-}``
+}```
